@@ -1,1 +1,4 @@
 .vim/undodir
+lazy-lock.json
+.config/
+temp/
