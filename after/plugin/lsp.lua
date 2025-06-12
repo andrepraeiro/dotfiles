@@ -1,0 +1,43 @@
+-- vim.opt.signcolumn = 'yes'
+-- local lspconfig_defaults = require('lspconfig').util.default_config
+-- lspconfig_defaults.capabilities = vim.tbl_deep_extend(
+--     'force',
+--     lspconfig_defaults.capabilities,
+--     require('cmp_nvim_lsp').default_capabilities()
+-- )
+--
+-- vim.api.nvim_create_autocmd('LspAttach', {
+--     desc = 'LSP actions',
+--     callback = function(event)
+--         local opts = { buffer = event.buf, remap = false }
+--
+--         vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>', opts)
+--         vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', opts)
+--         vim.keymap.set('n', '<leader>vws', '<cmd>lua vim.lsp.buf.workspace_symbol()<cr>', opts)
+--         vim.keymap.set('n', '<leader>vd', '<cmd>lua vim.diagnostic.open_float()<cr>', opts)
+--         vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_next()<cr>', opts)
+--         vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_prev()<cr>', opts)
+--         vim.keymap.set('n', '<leader>vca', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+--         vim.keymap.set('n', '<leader>vrr', '<cmd>lua vim.lsp.buf.references()<cr>', opts)
+--         vim.keymap.set('n', '<leader>vrn', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
+--         vim.keymap.set('n', '<leader>vws', '<cmd>lua vim.lsp.buf.workspace_symbol()<cr>', opts)
+--         vim.keymap.set('i', '<C-h>', '<cmd>lua vim.lsp.buf.signature_help()<cr>', opts)
+--     end,
+-- })
+--
+-- local cmp = require('cmp')
+--
+-- cmp.setup({
+--     sources = {{name='nvim_lsp'}},
+--     snippet={
+--         expand= function(args)
+--             vim.snippet.expand(args.body)
+--         end
+--     },
+--     mapping=cmp.mapping.preset.insert({
+--         ['<C-p>'] = cmp.mapping.select_prev_item(),
+--         ['<C-n>'] = cmp.mapping.select_next_item(),
+--         ['<C-y>'] = cmp.mapping.confirm({select = true}),
+--         ['<C-Space>'] = cmp.mapping.complete(),
+--     })
+-- })
