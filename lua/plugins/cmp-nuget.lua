@@ -4,7 +4,7 @@ return {
         "nvim-lua/plenary.nvim",
     },
     {
-        "nvim-cmp",
+        "hrsh7th/nvim-cmp",
         dependencies = {
             "PasiBergman/cmp-nuget",
         },
