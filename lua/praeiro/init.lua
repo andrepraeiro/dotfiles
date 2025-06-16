@@ -1,4 +1,3 @@
-require('praeiro.settings')
-require('praeiro.keymaps')
-require('praeiro.lazy')
-
+require("praeiro.settings")
+require("praeiro.keymaps")
+require("praeiro.lazy")

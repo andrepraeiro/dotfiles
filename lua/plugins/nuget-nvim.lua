@@ -7,4 +7,5 @@ return {
     config = function()
         require("nuget").setup()
     end,
+    enabled = false,
 }

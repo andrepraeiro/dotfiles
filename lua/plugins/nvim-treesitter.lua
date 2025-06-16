@@ -5,7 +5,7 @@ return {
         local configs = require("nvim-treesitter.configs")
 
         configs.setup({
-            ensure_installed = { "bash", "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html", "c_sharp" },
+            --ensure_installed = { "bash", "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html", "c_sharp" },
             sync_install = false,
             auto_install = false,
             highlight = { enable = true }, -- additional_vim_regex_highlight = false },
@@ -13,12 +13,12 @@ return {
             incremental_selection = {
                 enable = true,
                 keymaps = {
-                    init_selection = '<Enter>',
-                    node_incremental = '<Enter>',
+                    init_selection = "<Enter>",
+                    node_incremental = "<Enter>",
                     scope_incremental = false,
-                    node_decremental = '<Backspace>'
-                }
-            }
+                    node_decremental = "<Backspace>",
+                },
+            },
         })
-    end
+    end,
 }

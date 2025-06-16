@@ -1,1 +1,2 @@
-require('praeiro')
+require("praeiro")
+--require("lazyvim")
